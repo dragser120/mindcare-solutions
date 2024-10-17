@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarma Motivacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Alarmas Motivacionales</h1>
+        <div class="alarm-setup">
+            <label for="alarm-time">Hora de la alarma:</label>
+            <input type="time" id="alarm-time">
+            <label for="alarm-message">Mensaje:</label>
+            <input type="text" id="alarm-message" placeholder="Escribe tu mensaje motivacional">
+            <button onclick="setAlarm()">Configurar Alarma</button>
+        </div>
+        <div class="motivational-messages">
+            <h2>Mensajes Predeterminados</h2>
+            <ul id="messages-list"></ul>
+        </div>
+        <div id="alarm-status"></div>
+        <h2>¿Necesitas Ayuda?</h2>
+            <button id="botonAyuda">Obtener Ayuda</button>
+            <div id="opcionesAyuda" style="display: none;">
+                <p>Si necesitas hablar con alguien, estas son tus opciones:</p>
+                <ul>
+                    <li><a href="tel:+34XXXXXXXXX">Llamar a un profesional</a></li>
+                    <li><a href="https://www.ayudaprofesional.com" target="_blank">Buscar ayuda en línea</a></li>
+                </ul>
+    </div>
+    <audio id="alarm-sound" src="assets/alarm-sound.mp3" preload="auto"></audio>
+
+    <script src="app.js"></script>
+</body>
+</html>
