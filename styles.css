@@ -1,0 +1,74 @@
+/* styles.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.alarm-setup {
+    margin-bottom: 20px;
+}
+
+.alarm-setup label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.alarm-setup input, .alarm-setup button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.alarm-setup button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.alarm-setup button:hover {
+    background-color: #218838;
+}
+
+.motivational-messages {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.motivational-messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+.motivational-messages li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
